@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovyrun | Isolated Development Environment</title>
+    <style>
+        :root {
+            --bg-color: #0b111e;        /* Deep slate/navy background */
+            --text-color: #94a3b8;      /* Clean Muted slate text */
+            --text-bright: #f8fafc;     /* Off-white crisp text for headings */
+            --accent-teal: #14b8a6;     /* Vibrant teal call-to-action/borders */
+            --accent-alert: #ef4444;    /* Red status variable override */
+            --mono-font: 'Courier New', Courier, monospace;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--mono-font);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+        header {
+            border-bottom: 2px solid var(--accent-teal);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 { color: var(--text-bright); margin: 0; font-size: 1.8rem; }
+        .system-status { color: var(--accent-alert); font-weight: bold; }
+        .manifesto-section { margin-bottom: 40px; text-align: justify; }
+        h2 { color: var(--text-bright); border-left: 3px solid var(--accent-teal); padding-left: 10px; font-size: 1.3rem; margin-top: 30px; }
+        .command { color: var(--text-bright); font-weight: bold; }
+        .cta-box {
+            border: 1px dashed var(--accent-teal);
+            padding: 30px;
+            margin-top: 50px;
+            background: #111827;
+        }
+        .cta-box p { margin-top: 0; }
+        input[type="email"] {
+            background: var(--bg-color);
+            border: 1px solid var(--text-color);
+            color: #ffffff;
+            padding: 10px;
+            font-family: var(--mono-font);
+            width: 60%;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background: var(--accent-teal);
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-family: var(--mono-font);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: #64748b;
+            text-align: center;
+            border-top: 1px solid #1f2937;
+            padding-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>SOVYRUN</h1>
+                <small>sovyrun.com // isolated development environment</small>
+            </div>
+            <div class="system-status">_LEGACY_DRAG_UNLINKED</div>
+        </header>
+
+        <main>
+            <section class="manifesto-section">
+                <h2>I. The Great Entanglement</h2>
+                <p>Modern software development is trapped in a crisis of dependency. The industry has been conditioned to believe that Integration equals progress. Developers are trained to accept a paradigm where initializing a project requires dragging down hundreds of megabytes of unverified, bloated third-party packages across the open internet.</p>
+                <p>An "Integrated" Development Environment is a porous sieve. It forces your local machine to form an unbreakable umbilical cord to a chaotic web of global dependencies, hidden telemetry, and corporate tracking scripts.</p>
+
+                <h2>II. The Sovereign Shift</h2>
+                <p>We are drawing an unyielding line in the sand. Sovyrun introduces the Isolated Development Environment (IDE). Isolation is the ultimate optimization of cognitive bandwidth and system throughput. A hardened digital fortress built to protect the purity of execution. It cuts the cord to the bloated legacy web, purges dependency pollution, and establishes a stateless sandbox where code runs with absolute authority.</p>
+
+                <h2>III. Execution Components</h2>
+                <p><span class="command">Sovereign Script:</span> Code that has achieved complete independence from external pollution. Pure, deterministic logic written from scratch without standard package bloat or third-party library dependencies. It owns its own rules and syntax.</p>
+                <p><span class="command">Autonomous Script Loops:</span> The active, self-sustaining combustion engine of the isolated layer. Once Sovereign Script is injected into the hardened sandbox, it is spun into a continuous, non-throttled execution cycle, running indefinitely without state degradation or memory leaks.</p>
+            </section>
+
+            <section class="cta-box">
+                <p>// Enter your routing parameters to join the development log.</p>
+                <form action="mailto:philip.short@gmail.com" method="POST" enctype="text/plain">
+                    <input type="email" name="email" placeholder="operator@domain.com" required>
+                    <input type="submit" value="COMMIT">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Sovyrun Infrastructure Framework &copy; 2026 // [Alpha Ingress LLC]</p>
+        </footer>
+    </div>
+</body>
+</html>
