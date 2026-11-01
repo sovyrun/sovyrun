@@ -87,20 +87,36 @@
             background: var(--bg-outside);
             border: 1px solid var(--accent-purple);
             color: var(--text-bright);
-            padding: 10px;
+            padding: 12px;
             font-family: var(--mono-font);
-            width: 55%;
-            margin-right: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 15px;      /* Creates a clean vertical separation space on mobile */
         }
         input[type="submit"] {
             background: var(--accent-green);
             border: none;
             color: var(--text-bright);
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-family: var(--mono-font);
             cursor: pointer;
             font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
         }
+
+        /* Desktop Optimization: Snap them back side-by-side on wide screens */
+        @media (min-width: 600px) {
+            input[type="email"] {
+                width: 65%;
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+            input[type="submit"] {
+                width: auto;
+            }
+        }
+
         footer {
             margin-top: 60px;
             font-size: 0.8rem;
@@ -147,7 +163,7 @@
 
                 <section class="cta-box">
                     <p>// Enter your routing parameters to join the development log.</p>
-                    <form action="mailto:philip.short@gmail.com" method="POST" enctype="text/plain">
+                    <form action="mailto:benbrozer@gmail.com" method="POST" enctype="text/plain">
                         <input type="email" name="email" placeholder="operator@domain.com" required>
                         <input type="submit" value="COMMIT">
                     </form>
@@ -156,7 +172,7 @@
         </main>
 
         <footer>
-            <p>Sovyrun Infrastructure Framework &copy; 2026 // [Alpha Ingress LLC]</p>
+            <p>Sovyrun Infrastructure System &copy; 2026 // [Alpha Ingress LLC]</p>
         </footer>
     </div>
 </body>
